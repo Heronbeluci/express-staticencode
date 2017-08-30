@@ -13,6 +13,4 @@ app.get('/assets/*', staticEncode({
 }));
 ```
 
-We recommend PKG for encode the serverside source.
-
-[![NPM](https://nodei.co/npm/pkg.png?compact=true)](https://nodei.co/npm/pkg/)
+We recommend <a href="https://www.npmjs.com/package/pkg" target="_blank">PKG</a> for encode the serverside source.
