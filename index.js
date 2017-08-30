@@ -46,7 +46,7 @@ module.exports = function(config){
       function preloadDirectory(dir){
          fs.readdir(dir, function(err, filenames) {
             if(err){
-              console.log(err);
+              console.error(err);
               return;
             }
             filenames.forEach(function(filename) {
@@ -83,7 +83,7 @@ module.exports = function(config){
         res.end(data);
       });
     }else{
-      res.sendfile(assetsFolder+'/'+assetPath);
+      res.sendFile(assetsFolder+'/'+assetPath);
     }
 
   }
