@@ -12,7 +12,6 @@ module.exports = function(config){
 
    function requestFile(filePath, callback){
       if(cache[filePath] !== undefined){
-        console.log('css: ', filePath)
          if(callback!==undefined) callback(cache[filePath]);
          return;
       }
@@ -49,7 +48,6 @@ module.exports = function(config){
               console.log(err);
               return;
             }
-           // console.log(filenames)
             filenames.forEach(function(filename) {
               fs.readFile(path.resolve(dir, filename), 'utf-8', function(err, content) {
                 if(err){
