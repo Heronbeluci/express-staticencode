@@ -8,7 +8,8 @@ module.exports = function(config){
    var assetsFolder = config.folder;
 
    if(config.cssEncode===undefined) config.cssEncode=true;
-   if(config.jsEncode===undefined) config.jsEncode=true;;
+   if(config.jsEncode===undefined) config.jsEncode=true;
+   if(config.preload===undefined) config.preload=true;
 
    function requestFile(filePath, callback){
       if(cache[filePath] !== undefined){
