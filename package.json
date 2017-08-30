@@ -1,7 +1,7 @@
 {
   "name": "express-staticencode",
   "description": "A Express static files minificator and encoder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Heron Beluci <heron.srs@gmail.com> (https://github.com/Heronbeluci)",
   "contributors": [
     "heronbeluci"
@@ -16,7 +16,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.15.4",
-    "uglify-js": "^3.0.28"
+    "uglify-js": "^3.0.28",
+    "clean-css": "^4.1.7"
   },
   "optionalDependencies": {},
   "license": "BSD-3-Clause"
