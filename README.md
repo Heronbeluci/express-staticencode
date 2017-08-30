@@ -13,4 +13,4 @@ app.get('/assets/*', staticEncode({
 }));
 ```
 
-We recommend <a href="https://www.npmjs.com/package/pkg" target="_blank">PKG</a> for encode the serverside source.
+We recommend <a target="_blank" href="https://www.npmjs.com/package/pkg">PKG</a> to encode the serverside source.
