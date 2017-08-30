@@ -1,4 +1,4 @@
-[![npm package](https://nodei.co/npm/express-staticencode.png)](https://nodei.co/npm/express-staticencode/)
+[![NPM](https://nodei.co/npm/express-staticencode.png)](https://nodei.co/npm/express-staticencode/)
 
 
 # Express Static Encode
@@ -12,3 +12,6 @@ app.get('/assets/*', staticEncode({
   uglifyOptions:{}       // UglyfyJS options
 }));
 ```
+
+We recommend PKG for encode the serverside source.
+[![NPM](https://nodei.co/npm/pkg.png?compact=true)](https://nodei.co/npm/pkg/)
