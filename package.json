@@ -1,7 +1,7 @@
 {
   "name": "express-staticencode",
   "description": "A Express static files minificator and encoder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Heron Beluci <heron.srs@gmail.com> (https://github.com/Heronbeluci)",
   "contributors": [
     "heronbeluci"
