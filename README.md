@@ -14,4 +14,5 @@ app.get('/assets/*', staticEncode({
 ```
 
 We recommend PKG for encode the serverside source.
+
 [![NPM](https://nodei.co/npm/pkg.png?compact=true)](https://nodei.co/npm/pkg/)
