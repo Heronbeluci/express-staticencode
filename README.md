@@ -7,12 +7,13 @@ Basically this module will minify all javascript and CSS files with UglifyJS and
 #### Basic Usage
 ```javascript
 app.get('/assets/*', staticEncode({
-  folder: '/assets',  // Static folder
-  jsEncode: true,     // If you dont want to encode JS set to false (Default is true)
-  cssEncode: true,    // If you dont want to encode CSS set to false (Default is true)
-  preload: true,      // Load after config ended (Default is true)
-  uglifyOptions: {},  // UglyfyJS options
-  cleanCssOptions: {} // CleanCSS options
+  folder: '/assets',   // Static folder
+  jsEncode: true,      // If you dont want to encode JS set to false (Default is true)
+  cssEncode: true,     // If you dont want to encode CSS set to false (Default is true)
+  preload: true,       // Load after config ended (Default is true)
+  uglifyOptions: {},   // UglyfyJS options
+  cleanCssOptions: {}, // CleanCSS options
+  dev:false            // Set to true to dont save cache and dont encode
 }));
 ```
 
