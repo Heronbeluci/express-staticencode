@@ -1,24 +1,32 @@
 {
   "name": "express-staticencode",
   "description": "A Express static files minificator and encoder",
-  "version": "1.0.5",
-  "author": "Heron Beluci <heron.srs@gmail.com> (https://github.com/Heronbeluci)",
-  "contributors": [
-    "heronbeluci"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Heronbeluci/express-staticencode.git"
+  "homepage": "https://github.com/Heronbeluci/express-staticencode",
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "author": {
+    "name": "Heron Beluci",
+    "email": "heron.srs@gmail.com",
+    "url": "https://github.com/Heronbeluci"
   },
+  "version": "1.0.7",
   "bugs": {
     "url": "https://github.com/Heronbeluci/express-staticencode/issues"
   },
-  "main": "index.js",
+  "contributors": [
+    {
+      "name": "heronbeluci"
+    }
+  ],
   "dependencies": {
+    "clean-css": "^4.1.7",
     "express": "^4.15.4",
-    "uglify-js": "^3.0.28",
-    "clean-css": "^4.1.7"
+    "uglify-js": "^3.0.28"
   },
-  "optionalDependencies": {},
-  "license": "BSD-3-Clause"
+  "repository": "Heronbeluci/express-staticencode",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ]
 }
