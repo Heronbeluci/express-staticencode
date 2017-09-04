@@ -10,15 +10,20 @@ module.exports = function(config){
    if(config.cssEncode===undefined) config.cssEncode=true;
    if(config.jsEncode===undefined) config.jsEncode=true;
    if(config.preload===undefined) config.preload=true;
+   if(config.dev===undefined) config.dev=false;
 
    function requestFile(filePath, callback){
-      if(cache[filePath] !== undefined){
+      if(cache[filePath] !== undefined && config.dev !== true){
          if(callback!==undefined) callback(cache[filePath]);
          return;
       }
       fs.readFile(filePath, 'utf8', function(err, source){
         if(err){
           if(callback!==undefined) callback('[StaticEncode]: Failed to load file');
+          return;
+        }
+        if(config.dev === true){
+          if(callback!==undefined) callback(source);
           return;
         }
         if(filePath.indexOf('.js')!=-1){
